@@ -147,3 +147,8 @@ Also the following error, is fixed by `typeconfig.json` setting which I worte be
 error TS2705: An async function or method in ES5/ES3 requires the 'Promise' constructor.  Make sure you have a declaration for the 'Promise' constructor or include 'ES2015' in your `--lib` option.
 ```
 
+# TODO
+
+I comment out `client.getAccountInfoAsync()` method. It might be a bug. I submitt an issue to the github.
+
+[TypeError: Cannot read property 'getDatabaseAccount' of undefined](https://github.com/jcormont/documentdb-typescript/issues/14)
