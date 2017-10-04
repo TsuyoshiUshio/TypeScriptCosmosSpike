@@ -1,0 +1,9 @@
+func init
+func new
+cd HttpTriggerJS
+npm init
+tsc --init
+cp index.js index.ts
+
+```
+　
