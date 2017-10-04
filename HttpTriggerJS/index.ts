@@ -4,7 +4,7 @@ import * as DB from "documentdb-typescript";
 export async function run (context: any, req: any) {
     context.log('JavaScript HTTP trigger function processed a request.');
 
-    const client = new DB.Client(process.env.COSMOS_DB_HOST, process.env.COSMOS_DB_KEY);
+    const client = new DB.Client(process.env["COSMOS_DB_HOST"], process.env["COSMOS_DB_KEY"]);
     client.enableConsoleLog = true;
     //  console.log(await client.getAccountInfoAsync());
     await client.openAsync();

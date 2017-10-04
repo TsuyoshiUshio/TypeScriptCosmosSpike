@@ -10,5 +10,8 @@
   "license": "ISC",
   "dependencies": {
     "documentdb-typescript": "^1.0.6"
+  },
+  "devDependencies": {
+    "@types/node": "^8.0.32"
   }
 }
