@@ -33,6 +33,8 @@ tsc -p .
 cd ..
 ```
 
+`tsc -p .` compiles your ts code into javascript. Also `tsc -p . -w` will automatically compile a ts file into the js file.
+
 ## start Azure Functions locally
 
 Then execute it 
@@ -99,6 +101,8 @@ tsc --init
 cp index.js index.ts
 ```
 
+## Enabling TypeScript
+
 Change the index.ts function definition as
 
 
@@ -118,4 +122,30 @@ Also, you need to change `typeconfig.json` to add lib and change the target vers
     "lib": [ "es2015"],   
 ```
 
+## can't find `process` error
+
+If you find the following error
+
+```
+index.ts(7,34): error TS2304: Cannot find name 'process'.
+index.ts(7,65): error TS2304: Cannot find name 'process'.
+```
+
+You can fix by this
+
+```
+npm install --save-dev @types/node
+```
+
+You can refer this discussion.
+
+* [TypeScript: read arguments from command line - error TS2304: Cannot find name 'process'
+
+](https://stackoverflow.com/questions/35551185/typescript-read-arguments-from-command-line-error-ts2304-cannot-find-name-p)
+
+Also the following error, is fixed by `typeconfig.json` setting which I worte before.
+
+```
+error TS2705: An async function or method in ES5/ES3 requires the 'Promise' constructor.  Make sure you have a declaration for the 'Promise' constructor or include 'ES2015' in your `--lib` option.
+```
 
