@@ -6,8 +6,9 @@ export async function run (context: any, req: any) {
 
     const client = new DB.Client(process.env["COSMOS_DB_HOST"], process.env["COSMOS_DB_KEY"]);
     client.enableConsoleLog = true;
-    //  console.log(await client.getAccountInfoAsync());
+
     await client.openAsync();
+    console.log(await client.getAccountInfoAsync());
     var dbs = await client.listDatabasesAsync();
 
     if (req.query.name || (req.body && req.body.name)) {
