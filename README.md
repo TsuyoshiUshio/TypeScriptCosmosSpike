@@ -152,3 +152,6 @@ error TS2705: An async function or method in ES5/ES3 requires the 'Promise' cons
 I comment out `client.getAccountInfoAsync()` method. It might be a bug. I submitt an issue to the github.
 
 [TypeError: Cannot read property 'getDatabaseAccount' of undefined](https://github.com/jcormont/documentdb-typescript/issues/14)
+
+Solved. This commit solve the problem. It was just the mistook of README of the documentdb-typescript project.
+See this [commit](https://github.com/TsuyoshiUshio/TypeScriptCosmosSpike/commit/7eaf996c4ce05c93df3ea9586e3836fed672bf5a).
