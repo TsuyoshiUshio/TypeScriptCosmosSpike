@@ -139,9 +139,7 @@ npm install --save-dev @types/node
 
 You can refer this discussion.
 
-* [TypeScript: read arguments from command line - error TS2304: Cannot find name 'process'
-
-](https://stackoverflow.com/questions/35551185/typescript-read-arguments-from-command-line-error-ts2304-cannot-find-name-p)
+* [TypeScript: read arguments from command line - error TS2304: Cannot find name 'process'](https://stackoverflow.com/questions/35551185/typescript-read-arguments-from-command-line-error-ts2304-cannot-find-name-p)
 
 Also the following error, is fixed by `typeconfig.json` setting which I worte before.
 
